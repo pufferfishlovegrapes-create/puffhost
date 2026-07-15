@@ -1,0 +1,11 @@
+logs/
+
+world/
+
+plugins/
+
+cache/
+
+*.jar
+
+*.log
