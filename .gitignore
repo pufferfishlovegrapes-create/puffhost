@@ -9,3 +9,4 @@ cache/
 *.jar
 
 *.log
+.env
