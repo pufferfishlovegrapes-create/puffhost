@@ -1,7 +1,22 @@
 const footerLinks = {
-  Product: ['Features', 'Dashboard', 'Server Status', 'Pricing'],
-  Resources: ['Documentation', 'Eaglercraft Guide', 'API Reference', 'Changelog'],
-  Company: ['About', 'Blog', 'Contact', 'Privacy Policy'],
+  Product: [
+    { label: 'Features', href: '#features' },
+    { label: 'Server Status', href: '#status' },
+    { label: 'Dashboard', href: '#dashboard' },
+    { label: 'Pricing', href: '#' },
+  ],
+  Resources: [
+    { label: 'Documentation', href: '#' },
+    { label: 'Eaglercraft Guide', href: '#' },
+    { label: 'API Reference', href: '#' },
+    { label: 'Changelog', href: '#' },
+  ],
+  Company: [
+    { label: 'About', href: '#' },
+    { label: 'News', href: '#news' },
+    { label: 'Contact', href: '#' },
+    { label: 'Privacy Policy', href: '#' },
+  ],
 }
 
 export default function Footer() {
@@ -26,12 +41,12 @@ export default function Footer() {
               <h4 className="text-white font-semibold text-sm mb-4">{heading}</h4>
               <ul className="space-y-3">
                 {links.map((link) => (
-                  <li key={link}>
+                  <li key={link.label}>
                     <a
-                      href="#"
+                      href={link.href}
                       className="text-slate-400 hover:text-accent-cyan transition-colors duration-200 text-sm"
                     >
-                      {link}
+                      {link.label}
                     </a>
                   </li>
                 ))}

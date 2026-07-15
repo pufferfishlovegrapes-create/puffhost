@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react'
 
 const navLinks = [
   { label: 'Home', href: '#home' },
-  { label: 'Features', href: '#features' },
   { label: 'Status', href: '#status' },
+  { label: 'Dashboard', href: '#dashboard' },
+  { label: 'Login', href: '#login' },
 ]
 
 export default function Navbar() {
